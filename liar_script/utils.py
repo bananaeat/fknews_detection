@@ -3,9 +3,9 @@ import nltk
 
 def load_dataset(dataset):
     # load train, test and valid tsvs
-    train = pd.read_csv(f'data/{dataset}/train.tsv', sep='\t', header=None)
-    test = pd.read_csv(f'data/{dataset}/test.tsv', sep='\t', header=None)
-    valid = pd.read_csv(f'data/{dataset}/valid.tsv', sep='\t', header=None)
+    train = pd.read_csv(f'../data/{dataset}/train.tsv', sep='\t', header=None)
+    test = pd.read_csv(f'../data/{dataset}/test.tsv', sep='\t', header=None)
+    valid = pd.read_csv(f'../data/{dataset}/valid.tsv', sep='\t', header=None)
 
     return train, test, valid
 
